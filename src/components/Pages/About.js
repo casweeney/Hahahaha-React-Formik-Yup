@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from '../Common/Header';
 import image from '../assets/img/about.jpeg';
 import TimeLine from '../Common/TimeLine';
+import Footer from '../Common/Footer';
 
 class About extends Component {
     render() {
@@ -15,6 +16,7 @@ class About extends Component {
                 />
 
                 <TimeLine />
+                <Footer />
             </div>
         );
     }
