@@ -77,7 +77,9 @@ export default withFormik({
         phone: Yup.string()
             .min(10,'Please provide your 10 digit phone number.')
             .max(15, 'Your phone number is too long.')
-            .required('We need a phone number to reach you at.')
+            .required('We need a phone number to reach you at.'),
+        message: Yup.string().min(500, 'We need a more detailed information')
+            .required('Message is required')
     }),
     handleSubmit: (values, {setSubmitting}) => {
         console.log("VALUES", values);
